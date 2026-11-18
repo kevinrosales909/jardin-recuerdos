@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Jardín de los Recuerdos</title>
+    <!-- Enlace directo al CSS estilizado -->
+    <!-- CDN oficial de sql.js para evitar errores de módulos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+  <script type="module" crossorigin src="/assets/index-BH4mWVD8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BKOn3je0.css">
+</head>
+<body>
+    <header>
+        <h1>🌸 El Jardín de los Recuerdos</h1>
+        <p>Siembra tus momentos y hazlos florecer</p>
+    </header>
+
+    <main class="container">
+        <!-- Formulario de Creación -->
+        <section class="form-section">
+            <h2>Plantar un Nuevo Recuerdo</h2>
+            <form id="recuerdo-form">
+                <input type="text" id="contenido" placeholder="¿Qué deseas recordar hoy?" required>
+                <input type="date" id="fecha" required>
+                <select id="categoria">
+                    <option value="Estudio">Estudio</option>
+                    <option value="Tecnología">Tecnología</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Aventura">Aventura</option>
+                </select>
+                <select id="emocion">
+                    <option value="Alegría">Alegría</option>
+                    <option value="Entusiasmo">Entusiasmo</option>
+                    <option value="Nostalgia">Nostalgia</option>
+                    <option value="Paz">Paz</option>
+                </select>
+                <button type="submit" class="btn-primary">🌱 Plantar Flor</button>
+            </form>
+        </section>
+
+        <!-- Filtros -->
+        <section class="filter-section">
+            <label for="filtro-emocion">Filtrar por emoción:</label>
+            <select id="filtro-emocion">
+                <option value="todos">Todas las flores</option>
+                <option value="Alegría">Alegría</option>
+                <option value="Entusiasmo">Entusiasmo</option>
+                <option value="Nostalgia">Nostalgia</option>
+                <option value="Paz">Paz</option>
+            </select>
+        </section>
+
+        <!-- Grid del Jardín -->
+        <section id="jardin-grid" class="jardin-grid">
+            <!-- Las tarjetas de flores se generan dinámicamente aquí -->
+        </section>
+    </main>
+
+</body>
+</html>
