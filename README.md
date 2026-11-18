@@ -18,7 +18,7 @@ El proyecto implementa una tabla relacional `recuerdos` con las siguientes opera
 
 ## ⚙️ Cómo Ejecutar el Proyecto Localmente
 
-Sigue estos pasos en tu terminal (Git Bash o PowerShell) dentro de tu entorno de Windows:
+
 
 1. **Clona el repositorio:**
    ```bash
